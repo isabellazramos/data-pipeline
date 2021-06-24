@@ -35,11 +35,10 @@ def run_transformation():
     query = "SELECT * FROM dsp_sauter.twitchdata"
     try:
         conn_string = "dbname = 'postgres' host = 'host.docker.internal' user = 'postgres' password = 'admin'"
-        conn = db.connect(conn, query = query)
+        conn = db.connect(conn_string)
         dataframe = query_to_dataframe(conn, query = query)
         for row in dataframe.iterrows():
-            # selecionando apenas as colunas necessárias para a tabela que vamos utilizar
-            query = f"INSERT into dsp_sauter.twitchdata_copy(channel,watch_time,stream_time,peak_viewrs,average_viewers,followers,partnered,mature,lang) VALUES ('{row['channel']}','{row['watch_time']}','{row['stream_time']}','{row['peak_viewrs']}','{row['average_viewers']}','{row['followers']}','{row['partnered']}','{row['mature']}','{row['lang']}')"
+            query = f"INSERT into dsp_sauter.twitchdata_copy(channel,watch_time,stream_time,peak_viewrs,average_viewers,followers,partnered,mature,lang) VALUES ('{row['channel']}',{row['watch_time']},{row['stream_time']},{row['peak_viewrs']},{row['average_viewers']},{row['followers']},{row['partnered']},{row['mature']},'{row['lang']}')"
             result = single_insert(conn, query)
             if result == 1:
                 print("Erro no insert")
