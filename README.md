@@ -1,6 +1,3 @@
-<div align="center" id="top"> 
-  &#xa0;
-</div>
 
 <h1 align="center">Data Pipeline</h1>
 
@@ -10,12 +7,10 @@
   <img alt="Quantidade de linguagens utilizadas" src="https://img.shields.io/github/languages/count/isabellazramos/data-pipeline?color=56BEB8">
 
   <img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/isabellazramos/data-pipeline?color=56BEB8">
-
 </p>
 
 <p align="center">
   <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-funcionalidades">Funcionalidades</a> &#xa0; | &#xa0;
   <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-pré-requesitos">Pré requisitos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-começando">Começando</a> &#xa0; | &#xa0;
@@ -26,22 +21,19 @@
 
 ## :dart: Sobre ##
 
-Sobre o seu projeto
-
-## :sparkles: Funcionalidades ##
-
-:heavy_check_mark: Funcionalidade 1;\
-:heavy_check_mark: Funcionalidade 2;\
-:heavy_check_mark: Funcionalidade 3;
+O projeto visa a construção de um processo de pipeline de dados.
 
 ## :rocket: Tecnologias ##
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
+- Python
+- Jupyter Notebook
+- Airflow
 
 ## :white_check_mark: Pré requisitos ##
 
-Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.com) instalados em sua maquina.
+Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.com), Python e o Airflow instalados em sua máquina.
 
 ## :checkered_flag: Começando ##
 
@@ -53,6 +45,8 @@ $ git clone https://github.com/isabellazramos/data-pipeline
 $ cd data-pipeline
 
 ```
+
+Feito com :heart: por <a href="https://github.com/isabellazramos" target="_blank">Isabella M. Ramos</a>
 
 &#xa0;
 
